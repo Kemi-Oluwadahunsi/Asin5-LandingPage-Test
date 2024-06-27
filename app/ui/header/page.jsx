@@ -80,7 +80,7 @@ const Header = () => {
           </div>
 
           {menuOpen && (
-            <div className="lg:hidden absolute h-[90dvh] pt-[4rem] pb-8 bg-[#212121] top-[10%] left-0 flex flex-col gap-8 justify-between items-center z-[10000] w-full">
+            <div className="lg:hidden fix h-[90dvh] pt-[4rem] pb-8 bg-[#212121] top-[10%] left-0 flex flex-col gap-8 justify-between items-center z-[10000] w-full">
               <ul className="flex flex-col gap-8 justify-between text-white text-lg font-medium ">
                 {[
                   "About",
@@ -106,7 +106,7 @@ const Header = () => {
                 <button className=" bg-[#20888F] px-4 py-2 rounded-[2rem] border-none">
                   SINC With us
                 </button>
-                <button className=" bg-black px-24 py-2 rounded-[2rem] border-none">
+                <button className=" bg-black px-4 py-2 rounded-[2rem] border-none">
                   Apply to SIP 1.0
                 </button>
               </div>
