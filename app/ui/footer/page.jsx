@@ -27,7 +27,7 @@ const Footer = () => {
             </p>
           </div>
 
-          <div className="relative flex justify-between border border-[#676767] rounded-[2rem] lg:w-[35%] pl-8">
+          <div className="relative flex justify-between border border-[#676767] rounded-[2rem] lg:w-[35%] pl-2 lg:pl-8 text-sm lg:text-base">
             <input
               type="text"
               placeholder="Enter your email address"
