@@ -13,6 +13,7 @@ import Blogs from "../blogs/page";
 import Featured from "../featuredIn/page";
 import BuildCall from "../buildCall/page";
 import Footer from "../footer/page";
+import BuildFuture from "../buildFuture/page";
 
 const Home = () => {
   return (
@@ -20,6 +21,7 @@ const Home = () => {
       <Header />
       <HeroSection />
       <SectionTwo />
+      <BuildFuture />
       <AreaOfFocus />
       <Concept />
       <IncubationModel />

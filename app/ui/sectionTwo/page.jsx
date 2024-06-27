@@ -3,9 +3,9 @@ import { FaArrowRight } from "react-icons/fa6";
 
 const SectionTwo = () => {
   return (
-    <div className="bg-[#F4F4F4] flex flex-col gap-[5rem] items-center justify-center py-[5rem]">
-      <div className="flex flex-col gap-8 bg-white w-[60%] p-4 rounded-2xl px-[3rem] py-8 text-center">
-        <p className="text-[#212121] text-medium text-lg leading-9 w-[90%]">
+    <div className="bg-[#F4F4F4] flex flex-col gap-[3rem] px-2 lg:px-0 lg:gap-[5rem] items-center justify-center py-[3rem] lg:py-[5rem]">
+      <div className="flex flex-col gap-4 lg:gap-8 bg-white lg:w-[60%] p-4 rounded-2xl px-4 lg:px-[3rem] py-4 lg:py-8 text-center">
+        <p className="text-[#212121] text-medium text-sm lg:text-lg leading-7 lg:leading-9 w-[90%]">
           &quot;Nigeria and Africa has a massive network effect that have not be
           fully utilized. With Nigerians/Africans in every country and territory
           of the world, we can scale an African business to 100+ countries in
@@ -13,16 +13,16 @@ const SectionTwo = () => {
         </p>
 
         <div className="flex flex-col gap-2">
-          <h3 className="font-semibold text-[#212121]">
+          <h3 className="font-semibold text-sm lg:text-base text-[#212121]">
             Daniel Izeghs Oratokhai
           </h3>
-          <span className="text-[#4E4E4E]">
+          <span className="text-[#4E4E4E] text-sm lg:text-base">
             Managing Partner at SINC Partners Ltd
           </span>
         </div>
       </div>
 
-      <div className="flex flex-col gap-[3rem]">
+      <div className="lg:flex flex-col gap-[3rem] hidden">
         <h1 className="text-[#212121] text-center text-[4rem] leading-snug w-[70%] mx-auto">
           Network of builders helping startup scale
         </h1>

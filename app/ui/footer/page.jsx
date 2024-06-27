@@ -15,33 +15,35 @@ import naijaflag from "../../../public/images/naijaflag.png";
 const Footer = () => {
   return (
     <>
-      <footer className="bg-[#212121] pl-[10rem] text-white">
+      <footer className="bg-[#212121] px-4 lg:pl-[10rem] text-white">
         <div className="flex flex-col gap-[4rem] py-8">
-          <div className="flex flex-col w-[45%]">
-            <h1 className="font-semibold text-[5rem]">Newsletter</h1>
+          <div className="flex flex-col lg:w-[45%]">
+            <h1 className="font-semibold lg:text-[3rem] text-[2rem] xl:text-[5rem]">
+              Newsletter
+            </h1>
             <p className="leading-relaxed">
               Get the latest about SINC Partners, our startup Incubator program,
               Portfolio company offerings - straight into your inbox.
             </p>
           </div>
 
-          <div className="relative flex justify-between border border-[#676767] rounded-[2rem] w-[35%] pl-8">
+          <div className="relative flex justify-between border border-[#676767] rounded-[2rem] lg:w-[35%] pl-8">
             <input
               type="text"
               placeholder="Enter your email address"
-              className=" placeholder:text-[#BABABA] py-3 basis-[80%] bg-transparent"
+              className=" placeholder:text-[#BABABA] py-2 lg:py-3 lg:basis-[80%] bg-transparent"
             />
             <div>
-              <button className=" bg-white px-8 py-3 rounded-[2rem] border-none text-[#212121] font-bold">
+              <button className=" bg-white px-4 lg:px-8 py-2 lg:py-3 rounded-[2rem] border-none text-[#212121] font-bold">
                 Subscribe
               </button>
             </div>
           </div>
         </div>
 
-        <div className=" flex justify-between w-full border-t border-b border-[#E9E9E94D]">
-          <div className="basis-[100%] gap-4 flex">
-            <div className="basis-[20%] flex flex-col gap-8 pt-[3rem] pb-8">
+        <div className=" flex flex-col lg:flex-row justify-between w-full border-t border-b border-[#E9E9E94D]">
+          <div className="lg:basis-[100%] lg:gap-4 flex flex-col lg:flex-row">
+            <div className="lg:basis-[20%] flex flex-col gap-8 pt-4 lg:pt-[3rem] lg:pb-8">
               <div>
                 <Image src={logoWhite} alt="logo" title="White Logo" />
               </div>
@@ -53,8 +55,8 @@ const Footer = () => {
               </p>
             </div>
 
-            <div className="flex pt-[3rem] pb-8">
-              <div className="flex gap-[4rem]">
+            <div className="flex  pt-4 lg:pt-[3rem] pb-8">
+              <div className="flex flex-wrap gap-6 lg:gap-[4rem]">
                 <div className="flex flex-col gap-4">
                   <h2 className="font-semibold"> Platforms</h2>
 
@@ -117,8 +119,8 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="border-l border-[#E9E9E94D]">
-              <div className="pt-[3rem] pl-8 flex flex-col gap-8">
+            <div className="lg:border-l border-[#E9E9E94D] border-t">
+              <div className="lg:pt-[3rem] pt-4 lg:pl-8 flex flex-col gap-4 lg:gap-8">
                 <h2 className="font-semibold">Locations</h2>
                 <div>
                   <p>Abuja, Nigeria</p>
@@ -126,7 +128,7 @@ const Footer = () => {
                   <p>Philadelphia, USA</p>
                 </div>
 
-                <div className="flex pt-8 gap-8 w-full">
+                <div className="flex lg:pt-8 gap-8 w-full">
                   <div>
                     <Image
                       src={trustedImage}
@@ -150,10 +152,10 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="pr-[10rem]">
-          <div className="flex justify-between gap-8 pt-[3rem] pb-4">
-            <div className="flex flex-col gap-12 basis-[65%]">
-              <p className="text-sm flex items-center pt-2">
+        <div className="lg:pr-[10rem]">
+          <div className="flex flex-col justify-between gap-8 pt-4 lg:pt-[3rem] pb-4">
+            <div className="flex flex-col lg:flex-row gap-8 lg:gap-[4rem]">
+              <p className=" text-xs lg:text-sm pt-2 text-center lg:text-start">
                 Guaranteed 2x on your service or cash investment, usually been
                 the first to invest.{" "}
                 <span className="font-semibold pl-1">
@@ -162,8 +164,19 @@ const Footer = () => {
                 </span>
               </p>
 
-              <div className="flex justify-between font-medium">
-                <p>© 2023 SINC Partners Ltd. All rights reserved</p>{" "}
+              <div className="flex flex-col lg:flex-row items-center lg:items-start gap-4">
+                <Image src={gasusImage} alt="gasusimage" title="gasus image" />
+                <p className="text-xs text-center lg:text-start">
+                  We are a business built on the{" "}
+                  <br className="hidden lg:block" />
+                  foundation of Christian values and belief
+                </p>
+              </div>
+            </div>
+
+            <div className="flex flex-col gap-8 basis-[30%]">
+              <div className="flex flex-col lg:flex-row justify-between gap-4 lg:gap-0 font-medium">
+                <p className="text-sm lg:text-base text-center lg:text-start">© 2023 SINC Partners Ltd. All rights reserved</p>{" "}
                 <ul className="flex gap-4">
                   <li className="underline underline-offset-4 decoration-white">
                     Privacy Policy
@@ -175,43 +188,40 @@ const Footer = () => {
                     Security
                   </li>
                 </ul>
-              </div>
-            </div>
-
-            <div className="flex flex-col gap-8 basis-[30%]">
-              <div className="flex gap-4">
-                <Image src={gasusImage} alt="gasusimage" title="gasus image" />
-                <p className="text-xs">
-                  We are a business built on the <br />
-                  foundation of Christian values and belief
-                </p>
-              </div>
-
-              <div className="flex gap-4 place-self-end">
-                <Image
-                  src={facebookIcon}
-                  alt="socialIcon"
-                  title="social Icons"
-                />
-                <Image src={xIcon} alt="socialIcon" title="social Icons" />
-                <Image src={instaIcon} alt="socialIcon" title="social Icons" />
-                <Image
-                  src={linkedinIcon}
-                  alt="socialIcon"
-                  title="social Icons"
-                />
-                <Image src={smartIcon} alt="socialIcon" title="social Icons" />
-                <Image
-                  src={youtubeIcon}
-                  alt="socialIcon"
-                  title="social Icons"
-                />
-                <Image src={imoIcon} alt="socialIcon" title="social Icons" />
+                <div className="flex gap-4 place-self-center lg:place-self-end">
+                  <Image
+                    src={facebookIcon}
+                    alt="socialIcon"
+                    title="social Icons"
+                  />
+                  <Image src={xIcon} alt="socialIcon" title="social Icons" />
+                  <Image
+                    src={instaIcon}
+                    alt="socialIcon"
+                    title="social Icons"
+                  />
+                  <Image
+                    src={linkedinIcon}
+                    alt="socialIcon"
+                    title="social Icons"
+                  />
+                  <Image
+                    src={smartIcon}
+                    alt="socialIcon"
+                    title="social Icons"
+                  />
+                  <Image
+                    src={youtubeIcon}
+                    alt="socialIcon"
+                    title="social Icons"
+                  />
+                  <Image src={imoIcon} alt="socialIcon" title="social Icons" />
+                </div>
               </div>
             </div>
           </div>
 
-          <div className="flex items-center justify-center gap-2 pb-2">
+          <div className="flex items-center justify-center gap-2 pb-4">
             <span>Web In Nigeria</span>
             <Image src={naijaflag} alt="naijaFlag" title="The Nigerian Flag" />
           </div>

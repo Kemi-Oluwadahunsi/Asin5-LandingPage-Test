@@ -2,19 +2,19 @@ import Image from "next/image";
 
 const InvestorsNetwork = () => {
   return (
-    <div className="bg-[#F4F4F4] px-[8rem] py-[3rem] flex flex-col gap-[3rem]">
+    <div className="bg-[#F4F4F4] lg:px-[8rem] py-8 px-[1rem] lg:py-[3rem] flex flex-col gap-[3rem]">
       <div className="flex flex-col gap-4 text-center justify-center">
-        <h1 className="text-[#212121] text-[4rem] w-[90%] font-medium mx-auto">
+        <h1 className="text-[#212121] lg:text-[4rem] text-[1.1rem] font-medium mx-auto">
           SINC Investors Network
         </h1>
-        <div className="flex flex-col gap-4">
-          <p className="w-[80%] mx-auto">
+        <div className="flex flex-col text-sm lg:text-base gap-4">
+          <p className="lg:w-[80%] mx-auto">
             Our deals are structured not just to take in investments but to
             onboard owners passionate about our solutions. Our portfolio
             companies are valued at $50k at start, with these low valuation, you
             are guaranteed at least 2x-5x, usually been the first to invest.
           </p>
-          <p className="w-[80%] mx-auto">
+          <p className="lg:w-[80%] mx-auto">
             <span className="font-bold">Disclaimer:</span> These deal flows is a
             statement of our projections and may differ from stage to stage and
             from venture to venture and the guarantee is for deal 1, usually
@@ -23,16 +23,16 @@ const InvestorsNetwork = () => {
         </div>
       </div>
 
-      <div className="flex flex-col gap-[4rem] w-full">
+      <div className="flex flex-col gap-8 lg:gap-[4rem] w-full">
         <div className="flex flex-col justify-between gap-[2rem] w-full">
-          <h2 className=" text-[#212121] text-[1.4rem]">
+          <h2 className="text-center lg:text-start text-[#212121] lg:text-[1.4rem]">
             <span className="font-semibold">
               Micro Angel Investors & Service incubators
             </span>{" "}
             (Invest from $500 & above)
           </h2>
-          <div className="flex ">
-            <div className="border border-[#A4A4A4] border-l-0 flex flex-col gap-4 pl-4 py-4 flex-1">
+          <div className="flex flex-col lg:flex-row">
+            <div className="lg:border border-[#A4A4A4] border-l-0 border-t flex flex-col gap-4 pl-4 py-4 flex-1">
               <h3 className="font-semibold">Deal 1</h3>
 
               <div className=" text-sm flex flex-col gap-2">
@@ -90,7 +90,7 @@ const InvestorsNetwork = () => {
               </div>
             </div>
 
-            <div className="border border-[#A4A4A4]  border-r-0 flex flex-col gap-4 pl-4 py-4 flex-1">
+            <div className="lg:border border-[#A4A4A4]  border-r-0 border-l-0 lg:border-l flex flex-col gap-4 pl-4 py-4 flex-1">
               <h3 className="font-semibold">Deal 3</h3>
               <div className="text-sm flex flex-col gap-2">
                 <p>
@@ -115,7 +115,7 @@ const InvestorsNetwork = () => {
               </div>
             </div>
 
-            <div className="border border-[#A4A4A4] border-r-0 flex flex-col gap-4 pl-4 py-4 flex-1">
+            <div className="lg:border border-[#A4A4A4]  border-r-0 border-l-0 lg:border-l border-t border-b flex flex-col gap-4 pl-4 py-4 flex-1">
               <h3 className="font-semibold">Deal 4</h3>
               <div className="text-sm flex flex-col gap-2">
                 <p>
@@ -146,14 +146,14 @@ const InvestorsNetwork = () => {
           </div>
 
           <div className="flex flex-col justify-between gap-[2rem] w-full">
-            <h2 className="text-[1.4rem] text-[#212121]">
+            <h2 className="text-center lg:text-start lg:text-[1.4rem] text-[#212121]">
               <span className="font-semibold ">
                 Angel Investors & Venture Capital
               </span>{" "}
               (Invest from $50k and above)
             </h2>
-            <div className="flex ">
-              <div className="border border-[#A4A4A4] border-l-0 flex flex-col gap-4 pl-4 py-4 flex-1">
+            <div className="flex flex-col lg:flex-row">
+              <div className="lg:border border-[#A4A4A4] border-l-0 border-t  flex flex-col gap-4 pl-4 py-4 flex-1">
                 <h3 className="font-semibold">Deal 5</h3>
 
                 <div className=" text-sm flex flex-col gap-2">
@@ -206,7 +206,7 @@ const InvestorsNetwork = () => {
                 </div>
               </div>
 
-              <div className="border border-[#A4A4A4]  border-r-0 flex flex-col gap-4 pl-4 py-4 flex-1">
+              <div className="lg:border border-[#A4A4A4]  border-r-0 border-l-0 flex flex-col gap-4 pl-4 py-4 flex-1">
                 <h3 className="font-semibold">Deal 7</h3>
                 <div className="text-sm flex flex-col gap-2">
                   <p>
@@ -231,7 +231,7 @@ const InvestorsNetwork = () => {
                 </div>
               </div>
 
-              <div className="border border-[#A4A4A4] border-r-0 flex flex-col  gap-4 px-4 py-4 flex-1 ">
+              <div className="lg:border border-[#A4A4A4]  border-r-0 border-l-0 border-t border-b flex flex-col  gap-4 px-4 py-4 flex-1 ">
                 <div className="bg-[#101010] flex flex-col h-full p-4 gap-8">
                   <h3 className="font-semibold text-white">
                     Work with Service Incubators (SINC) to expedite your

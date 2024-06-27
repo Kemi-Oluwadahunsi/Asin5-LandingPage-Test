@@ -6,7 +6,7 @@ import bjbrand from "../../../public/images/bjbrand.png";
 
 const Featured = () => {
   return (
-    <div className="bg-[#F4F4F4] flex flex-col gap-8 py-[3rem]">
+    <div className="bg-[#F4F4F4] lg:flex flex-col gap-8 py-[3rem] hidden">
       <div className=" flex justify-between gap-[1rem] w-full">
         <div className="basis-[18%]">
           <Image src={punch} alt="punch" title="blog image" className="w-full"/>
