@@ -102,7 +102,7 @@ const Header = () => {
                 ))}
               </ul>
 
-              <div className="flex justify-between items-center gap-8 text-white font-semibold">
+              <div className="flex flex-col justify-between items-center gap-8 text-white font-semibold">
                 <button className=" bg-[#20888F] px-8 py-4 rounded-[2rem] border-none">
                   SINC With us
                 </button>
