@@ -80,8 +80,8 @@ const Header = () => {
           </div>
 
           {menuOpen && (
-            <div className="lg:hidden absolute h-[90dvh] pt-[4rem] pb-8 bg-[#FDCA09] top-[10%] left-0 flex flex-col gap-4 justify-between items-center z-[10000] w-full">
-              <ul className="flex basis-[80%] justify-between text-lg font-medium ">
+            <div className="lg:hidden absolute h-[90dvh] pt-[4rem] pb-8 bg-[#FDCA09] top-[10%] left-0 flex flex-col gap-8 justify-between items-center z-[10000] w-full">
+              <ul className="flex flex-col gap-8 justify-between text-lg font-medium ">
                 {[
                   "About",
                   "SIP",
