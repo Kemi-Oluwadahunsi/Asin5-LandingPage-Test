@@ -80,7 +80,7 @@ const Header = () => {
           </div>
 
           {menuOpen && (
-            <div className="lg:hidden absolute h-[100dvh] pt-[4rem] pb-8 bg-[#212121] top-[12%] left-0 flex flex-col justify-between items-center z-[10000] w-full">
+            <div className="lg:hidden absolute h-[100dvh] pt-[4rem] pb-8 bg-[#212121] top-[12%] left-0 flex flex-col gap-4 items-center z-[10000] w-full">
               <ul className="flex flex-col gap-8 justify-between text-white text-lg font-medium ">
                 {[
                   "About",
@@ -91,14 +91,7 @@ const Header = () => {
                   "Initiatives",
                   "More",
                 ].map((link) => (
-                  <li
-                    key={link}
-                    // className={`cursor-pointer ${
-                    //   // activeLink === link ? "text-[#C82090]" : ""
-                    // }`}
-                  >
-                    {link}
-                  </li>
+                  <li key={link}>{link}</li>
                 ))}
               </ul>
 
