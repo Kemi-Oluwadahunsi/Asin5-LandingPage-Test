@@ -4,8 +4,8 @@ import { FaArrowRight } from "react-icons/fa6";
 const SectionTwo = () => {
   return (
     <div className="bg-[#F4F4F4] flex flex-col gap-[5rem] items-center justify-center py-[5rem]">
-      <div className="flex flex-col gap-8 bg-white w-[50%] p-4 rounded-2xl px-[3rem] py-8 text-center">
-        <p className="text-[#212121] text-medium">
+      <div className="flex flex-col gap-8 bg-white w-[60%] p-4 rounded-2xl px-[3rem] py-8 text-center">
+        <p className="text-[#212121] text-medium text-lg leading-9 w-[90%]">
           &quot;Nigeria and Africa has a massive network effect that have not be
           fully utilized. With Nigerians/Africans in every country and territory
           of the world, we can scale an African business to 100+ countries in

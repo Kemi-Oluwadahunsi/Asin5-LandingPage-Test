@@ -1,7 +1,7 @@
 import { IoTriangleSharp } from "react-icons/io5";
 import { PiDiamondFill } from "react-icons/pi";
 import { BsFillPentagonFill } from "react-icons/bs";
-
+import { FaArrowRight } from "react-icons/fa6";
 
 const IncubationModel = () => {
   return (
@@ -75,10 +75,23 @@ const IncubationModel = () => {
           </div>
 
           <div className="flex justify-between w-[80%] gap-4">
-            <div className=" bg-white rounded-3xl text-[1.2rem] text-[#212121] py-3 px-8 text-center">Service Incubator Equity</div>
-            <div className=" bg-white rounded-3xl text-[1.2rem] text-[#212121] py-3 px-8 text-center">SEEQ Maths Equation</div>
-            <div className="basis-[40%] bg-white rounded-3xl text-[1.2rem] text-[#212121] py-3 px-4 text-center">Value of my Equity Over Time</div>
+            <div className=" bg-white rounded-3xl text-[1.2rem] text-[#212121] py-3 px-8 text-center">
+              Service Incubator Equity
+            </div>
+            <div className=" bg-white rounded-3xl text-[1.2rem] text-[#212121] py-3 px-8 text-center">
+              SEEQ Maths Equation
+            </div>
+            <div className="basis-[40%] bg-white rounded-3xl text-[1.2rem] text-[#212121] py-3 px-4 text-center">
+              Value of my Equity Over Time
+            </div>
           </div>
+        </div>
+
+        <div className="flex items-center justify-center">
+          <button className="border-none flex gap-4 text-lg items-center underline underline-offset-4 font-semibold">
+            <span>Become A Service Incubator</span>
+            <FaArrowRight />
+          </button>
         </div>
       </div>
     </div>

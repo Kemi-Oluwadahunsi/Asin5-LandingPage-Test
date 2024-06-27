@@ -4,7 +4,7 @@ import Logo from "../../../public/images/Header/Logo.png";
 const Header = () => {
   return (
     <>
-      <header className="bg-[#F9F9F9] flex items-center px-[10rem] py-2">
+      <header className="bg-[#F9F9F9] flex items-center px-[10rem] py-3">
         <nav className="flex justify-between w-full">
           <div className="basis-[50%] flex gap-8 justify-between items-center">
             <div className="flex">
