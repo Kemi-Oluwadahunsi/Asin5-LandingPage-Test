@@ -177,14 +177,14 @@ const Footer = () => {
             <div className="flex flex-col gap-8 basis-[30%]">
               <div className="flex flex-col lg:flex-row justify-between gap-4 lg:gap-0 font-medium">
                 <p className="text-sm lg:text-base text-center lg:text-start">© 2023 SINC Partners Ltd. All rights reserved</p>{" "}
-                <ul className="flex gap-4">
-                  <li className="underline underline-offset-4 decoration-white">
+                <ul className="flex justify-center items-center gap-4">
+                  <li className="underline underline-offset-4 decoration-white text-xs lg:text-base">
                     Privacy Policy
                   </li>
-                  <li className="underline underline-offset-4 decoration-white">
+                  <li className="underline underline-offset-4 decoration-white text-xs lg:text-base">
                     Terms of Service
                   </li>
-                  <li className="underline underline-offset-4 decoration-white">
+                  <li className="underline underline-offset-4 decoration-white text-xs lg:text-base">
                     Security
                   </li>
                 </ul>
