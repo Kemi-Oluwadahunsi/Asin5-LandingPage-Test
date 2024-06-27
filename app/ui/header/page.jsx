@@ -44,7 +44,7 @@ const Header = () => {
 
           {/* mobile nav menu */}
           <div className="block text-center md:hidden">
-            <button onClick={toggleMenu} className="text-[#5A6675] flex">
+            <button onClick={toggleMenu} className="text-[#5A6675] flex pt-3">
               {menuOpen ? (
                 <svg
                   className="w-8 h-8"
@@ -80,7 +80,7 @@ const Header = () => {
           </div>
 
           {menuOpen && (
-            <div className="lg:hidden fix h-[90dvh] pt-[4rem] pb-8 bg-[#212121] top-[10%] left-0 flex flex-col gap-8 justify-between items-center z-[10000] w-full">
+            <div className="lg:hidden absolute h-[100dvh] pt-[4rem] pb-8 bg-[#212121] top-[12%] left-0 flex flex-col justify-between items-center z-[10000] w-full">
               <ul className="flex flex-col gap-8 justify-between text-white text-lg font-medium ">
                 {[
                   "About",
