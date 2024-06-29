@@ -9,14 +9,14 @@ const Header = () => {
   };
   return (
     <>
-      <header className="bg-[#F9F9F9] lg:flex items-center px-8 lg:px-[10rem] py-3">
+      <header className="bg-[#F9F9F9] lg:flex items-center px-8 xl:px-[6rem] py-3">
         <nav className="flex justify-between w-full">
           <div className="lg:basis-[50%] flex gap-8 justify-between items-center w-full">
             <div className="flex">
               <Image src={Logo} alt="Logo" title="Logo" />
             </div>
 
-            <ul className="hidden lg:flex basis-[80%] justify-between text-lg font-medium ">
+            <ul className="hidden lg:flex basis-[80%] justify-between lg:text-sm text-lg font-medium ">
               {[
                 "About",
                 "SIP",
@@ -34,16 +34,16 @@ const Header = () => {
           </div>
 
           <div className="hidden lg:flex justify-between items-center gap-8 text-white font-semibold">
-            <button className=" bg-[#20888F] px-8 py-4 rounded-[2rem] border-none">
+            <button className=" bg-[#20888F] px-8 lg:px-6 lg:py-3 py-4 rounded-[2rem] border-none">
               SINC With us
             </button>
-            <button className=" bg-black px-8 py-4 rounded-[2rem] border-none">
+            <button className=" bg-black px-8 py-4 lg:px-6 lg:py-3 rounded-[2rem] border-none">
               Apply to SIP 1.0
             </button>
           </div>
 
           {/* mobile nav menu */}
-          <div className="block text-center md:hidden">
+          <div className="block text-center lg:hidden">
             <button onClick={toggleMenu} className="text-[#5A6675] flex pt-3">
               {menuOpen ? (
                 <svg

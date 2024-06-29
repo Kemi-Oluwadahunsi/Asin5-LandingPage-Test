@@ -2,20 +2,20 @@ import { FaArrowRight } from "react-icons/fa6";
 
 const CoFound = () => {
   return (
-    <div className="bg-[#F4F4F4] lg:px-[10rem] px-4 lg:py-[3rem] py-6 flex flex-col gap-8 lg:gap-[3rem]">
+    <div className="bg-[#F4F4F4] lg:px-[6rem] xl:px-[10rem] px-4 lg:py-[3rem] py-6 flex flex-col gap-8 lg:gap-[3rem]">
       <div className="flex flex-col gap-4 text-center justify-center">
         <h1 className="text-[#212121] lg:text-[4rem] text-[1.1rem] font-medium mx-auto">
           Co-found With Us
         </h1>
-        <p className="lg:w-[71%] lg:text-base text-sm mx-auto">
+        <p className="xl:w-[71%] lg:w-[90%] lg:text-base text-sm mx-auto">
           We seek to collaborate with visionary individuals who are solving
           similar problems of helping entrepreneurs succeed
         </p>
       </div>
 
-      <div className="flex flex-col lg:flex-row justify-between gap-4 lg:gap-[2rem] w-full">
-        <div className="bg-white flex flex-col gap-4 px-4 lg:px-8 py-4 flex-1 rounded-2xl">
-          <div className="flex items-center text-sm lg:text-base justify-center bg-black w-10 lgw-[4rem] h-10 lg:h-[4rem] rounded-full text-white">
+      <div className="flex flex-col lg:flex-row justify-between gap-4 xl:gap-[2rem] w-full">
+        <div className="bg-white flex flex-col gap-4 px-4 lg:px-4 xl:px-8 py-4 flex-1 rounded-2xl">
+          <div className="flex items-center text-sm lg:text-base justify-center bg-black w-10 lg:w-[3rem] lg:h-[3rem] xl:w-[4rem] h-10 xl:h-[4rem] rounded-full text-white">
             1
           </div>
           <h2 className="font-semibold lg:text-[1.4rem] text-[#212121]">
@@ -29,8 +29,8 @@ const CoFound = () => {
           </p>
         </div>
 
-        <div className="bg-white flex flex-col gap-4 px-4 lg:px-8 py-4 flex-1 rounded-2xl">
-          <div className="flex items-center text-sm lg:text-base justify-center bg-[#F47733] w-10 lg:w-[4rem] h-10 lg:h-[4rem] rounded-full text-white">
+        <div className="bg-white flex flex-col gap-4 px-4 lg:px-4 xl:px-8 py-4 flex-1 rounded-2xl">
+          <div className="flex items-center text-sm lg:text-base justify-center bg-[#F47733] w-10 lg:w-[3rem] lg:h-[3rem] xl:w-[4rem] h-10 xl:h-[4rem] rounded-full text-white">
             2
           </div>
           <h2 className="font-semibold lg:text-[1.4rem] text-[#212121]">
@@ -44,8 +44,8 @@ const CoFound = () => {
           </p>
         </div>
 
-        <div className="bg-white flex flex-col gap-4 px-4 lg:px-8 py-4 flex-1 rounded-2xl">
-          <div className="flex items-center text-sm lg:text-base justify-center bg-[#FF78BF] w-10 lg:w-[4rem] h-10 lg:h-[4rem] rounded-full text-white">
+        <div className="bg-white flex flex-col gap-4 px-4 lg:px-4 xl:px-8 py-4 flex-1 rounded-2xl">
+          <div className="flex items-center text-sm lg:text-base justify-center bg-[#FF78BF] w-10 lg:w-[3rem] lg:h-[3rem] xl:w-[4rem] h-10 xl:h-[4rem] rounded-full text-white">
             3
           </div>
           <h2 className="font-semibold lg:text-[1.4rem] text-[#212121]">

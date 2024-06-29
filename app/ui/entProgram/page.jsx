@@ -117,7 +117,7 @@ const EntProgram = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    const handleResize = () => setIsMobile(window.innerWidth <= 1024);
+    const handleResize = () => setIsMobile(window.innerWidth < 1024);
     handleResize(); // Check screen width on initial load
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
@@ -133,12 +133,12 @@ const EntProgram = () => {
   };
 
   return (
-    <div className="bg-[#F4F4F4] px-4 lg:px-[10rem] py-6 lg:py-[3rem] flex flex-col gap-8 lg:gap-[3rem]">
+    <div className="bg-[#F4F4F4] px-4 xl:px-[10rem] lg:px-[6rem] py-6 lg:py-[3rem] flex flex-col gap-8 lg:gap-[3rem]">
       <div className="flex flex-col gap-4 text-center justify-center">
-        <h1 className="text-[#212121] lg:text-[4rem] text-[1.1rem] font-medium mx-auto">
+        <h1 className="text-[#212121] lg:text-[3em] xl:text-[4rem] text-[1.1rem] font-medium mx-auto">
           How It Works
         </h1>
-        <p className="lg:w-[71%] lg:text-base text-sm mx-auto">
+        <p className="lg:w-[95%] xl:w-[71%] lg:text-base text-sm mx-auto">
           Our EIR program is our structured 3 months un-paid program designed to
           help us have a pipeline of business and technical cofounders who can
           run the venture of choice as CEO & CTO owning 20% equity each.
@@ -192,7 +192,12 @@ const EntProgram = () => {
 
           <div className="bg-white flex flex-col gap-4 px-4 py-4 flex-1 rounded-2xl">
             <div className="flex items-center justify-center bg-[#4E4E4E] w-[4rem] h-[4rem] rounded-full text-white">
-              <Image src={agreement} alt="agreement" width={40} height={40} />
+              <Image
+                src={agreement}
+                alt="agreement"
+                width={"auto"}
+                height={"auto"}
+              />
             </div>
             <h2 className="font-semibold text-[1.4rem] text-[#212121]">
               Negotiation and Agreement
@@ -214,12 +219,12 @@ const EntProgram = () => {
           </div>
         </Slider>
       ) : (
-        <div className="flex justify-between gap-[2rem] w-full">
-          <div className="bg-white flex flex-col gap-4 px-4 py-4 flex-1 rounded-2xl">
-            <div className="flex items-center justify-center bg-[#4E4E4E] w-[4rem] h-[4rem] rounded-full text-white">
-              <Image src={app} alt="app" width={40} height={40} />
+        <div className="flex justify-between xl:gap-8 lg:gap-4 gap-[2rem] w-full">
+          <div className="bg-white flex flex-col gap-8 sm:gap-4 px-4 py-4 flex-1 rounded-2xl">
+            <div className="flex items-center justify-center bg-[#4E4E4E] w-[2rem] h-[2rem] lg:w-[3rem] lg:h-[3rem] xl:w-[4rem] xl:h-[4rem] rounded-full text-white">
+              <Image src={app} alt="app" width={"auto"} height={"auto"} />
             </div>
-            <h2 className="font-semibold text-[1.4rem] text-[#212121]">
+            <h2 className="font-semibold lg:text-[1.2em] xl:text-[1.4rem] text-[#212121]">
               Application and Selection
             </h2>
             <div className="flex text-[0.9em] text-[#4E4E4E] flex-col gap-2">
@@ -236,11 +241,11 @@ const EntProgram = () => {
             </div>
           </div>
 
-          <div className="bg-white flex flex-col gap-4 px-4 py-4 flex-1 rounded-2xl">
-            <div className="flex items-center justify-center bg-[#4E4E4E] w-[4rem] h-[4rem] rounded-full text-white">
+          <div className="bg-white flex flex-col gap-8 sm:gap-4 px-4 py-4 flex-1 rounded-2xl">
+            <div className="flex items-center justify-center bg-[#4E4E4E] w-[2rem] h-[2rem] lg:w-[3rem] lg:h-[3rem] xl:w-[4rem] xl:h-[4rem] rounded-full text-white">
               <Image src={meeting} alt="meeting" width={40} height={40} />
             </div>
-            <h2 className="font-semibold text-[1.4rem] text-[#212121]">
+            <h2 className="font-semibold lg:text-[1.2em] xl:text-[1.4rem] text-[#212121]">
               Alignment Meeting and Proposal Submission
             </h2>
             <div className="flex text-[0.9em] text-[#4E4E4E] flex-col gap-2">
@@ -258,11 +263,16 @@ const EntProgram = () => {
             </div>
           </div>
 
-          <div className="bg-white flex flex-col gap-4 px-4 py-4 flex-1 rounded-2xl">
-            <div className="flex items-center justify-center bg-[#4E4E4E] w-[4rem] h-[4rem] rounded-full text-white">
-              <Image src={agreement} alt="agreement" width={40} height={40} />
+          <div className="bg-white flex flex-col gap-8 sm:gap-4 px-4 py-4 flex-1 rounded-2xl">
+            <div className="flex items-center justify-center bg-[#4E4E4E] w-[2rem] h-[2rem] lg:w-[3rem] lg:h-[3rem] xl:w-[4rem] xl:h-[4rem] rounded-full text-white">
+              <Image
+                src={agreement}
+                alt="agreement"
+                width={"auto"}
+                height={"auto"}
+              />
             </div>
-            <h2 className="font-semibold text-[1.4rem] text-[#212121]">
+            <h2 className="font-semibold lg:text-[1.2em] xl:text-[1.4rem] text-[#212121]">
               Negotiation and Agreement
             </h2>
             <div className="flex text-[0.9em] text-[#4E4E4E] flex-col gap-2">
@@ -292,8 +302,18 @@ const EntProgram = () => {
 
       <div className="flex items-center justify-center xl:mt-4">
         <div className="flex gap-8 xl:gap-[4rem]">
-          <Image src={leftarrow} alt="leftarrow" title="circle arrow left" className="w-[80%] xl:w-full"/>
-          <Image src={rightarrow} alt="rightarrow" title="circle arrow right" className="w-[80%] xl:w-full"/>
+          <Image
+            src={leftarrow}
+            alt="leftarrow"
+            title="circle arrow left"
+            className="w-[80%] xl:w-full"
+          />
+          <Image
+            src={rightarrow}
+            alt="rightarrow"
+            title="circle arrow right"
+            className="w-[80%] xl:w-full"
+          />
         </div>
       </div>
     </div>

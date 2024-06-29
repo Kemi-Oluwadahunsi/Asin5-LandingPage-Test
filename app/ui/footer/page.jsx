@@ -15,9 +15,9 @@ import naijaflag from "../../../public/images/naijaflag.png";
 const Footer = () => {
   return (
     <>
-      <footer className="bg-[#212121] px-4 lg:pl-[10rem] text-white">
+      <footer className="bg-[#212121] px-4 lg:pl-[4rem] xl:pl-[10rem] text-white">
         <div className="flex flex-col gap-[4rem] py-8">
-          <div className="flex flex-col lg:w-[45%]">
+          <div className="flex flex-col lg:w-[55%] xl:w-[45%]">
             <h1 className="font-semibold lg:text-[3rem] text-[2rem] xl:text-[5rem]">
               Newsletter
             </h1>
@@ -43,11 +43,11 @@ const Footer = () => {
 
         <div className=" flex flex-col lg:flex-row justify-between w-full border-t border-b border-[#E9E9E94D]">
           <div className="lg:basis-[100%] lg:gap-4 flex flex-col lg:flex-row">
-            <div className="lg:basis-[20%] flex flex-col gap-8 pt-4 lg:pt-[3rem] lg:pb-8">
+            <div className="lg:basis-[20%] flex flex-col gap-8 lg:gap-4 xl:gap-6 pt-4 lg:pt-[3rem] lg:pb-8">
               <div>
                 <Image src={logoWhite} alt="logo" title="White Logo" />
               </div>
-              <p className="text-[#C9C9C9] text-sm leading-[2.2] font-light w-[85%]">
+              <p className="text-[#C9C9C9] text-sm lg:leading-[1.6] xl:leading-[2] font-light xl:w-[85%]">
                 SINC Partners is a service incubation company connecting experts
                 in product development and growth marketing willing to offer
                 their services to amazing startups in exchange for minute equity
@@ -56,11 +56,11 @@ const Footer = () => {
             </div>
 
             <div className="flex  pt-4 lg:pt-[3rem] pb-8">
-              <div className="flex flex-wrap gap-6 lg:gap-[4rem]">
+              <div className="flex flex-wrap lg:flex-nowrap gap-6 lg:gap-2 xl:gap-[4rem]">
                 <div className="flex flex-col gap-4">
                   <h2 className="font-semibold"> Platforms</h2>
 
-                  <ul className="text-[#C9C9C9] text-[0.95rem] flex flex-col gap-3">
+                  <ul className="text-[#C9C9C9] text-[0.95rem] lg:text-sm xl:text-[0.95rem] flex flex-col gap-3 lg:gap-2 xl:gap-3">
                     <li>Kofoundme</li>
                     <li>InResidency</li>
                     <li>Service Market </li>
@@ -75,7 +75,7 @@ const Footer = () => {
                 <div className="flex flex-col gap-4">
                   <h2 className="font-semibold">Initiatives</h2>
 
-                  <ul className="text-[#C9C9C9] text-[0.95rem] flex flex-col gap-3">
+                  <ul className="text-[#C9C9C9] text-[0.95rem] lg:text-sm xl:text-[0.95rem] flex flex-col gap-3 lg:gap-2 xl:gap-3">
                     <li>Jabi Plains</li>
                     <li>Local Pricing Initiative</li>
                     <li>Scholarship Program</li>
@@ -90,7 +90,7 @@ const Footer = () => {
                 <div className="flex flex-col gap-4">
                   <h2 className="font-semibold">About Us</h2>
 
-                  <ul className="text-[#C9C9C9] text-[0.95rem] flex flex-col gap-3">
+                  <ul className="text-[#C9C9C9] text-[0.95rem] lg:text-sm xl:text-[0.95rem] flex flex-col gap-3 lg:gap-2 xl:gap-3">
                     <li>Who We Are</li>
                     <li>Our People</li>
                     <li>Concept Innovations</li>
@@ -105,7 +105,7 @@ const Footer = () => {
                 <div className="flex flex-col gap-4">
                   <h2 className="font-semibold"> More</h2>
 
-                  <ul className="text-[#C9C9C9] text-[0.95rem] flex flex-col gap-3">
+                  <ul className="text-[#C9C9C9] text-[0.95rem] lg:text-sm xl:text-[0.95rem] flex flex-col gap-3 lg:gap-2 xl:gap-3">
                     <li>Services</li>
                     <li>Equity Jobs</li>
                     <li>EIR Program</li>
@@ -119,31 +119,31 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="lg:border-l border-[#E9E9E94D] border-t">
-              <div className="lg:pt-[3rem] pt-4 lg:pl-8 flex flex-col gap-4 lg:gap-8">
+            <div className="lg:border-l border-[#E9E9E94D] border-t lg:basis-[20%]">
+              <div className="lg:pt-[3rem] pt-4 pl-8 lg:pl-4 xl:pl-8 flex flex-col gap-4 xl:gap-8">
                 <h2 className="font-semibold">Locations</h2>
-                <div>
+                <div className="lg:text-sm xl:text-base leading-[1.6]">
                   <p>Abuja, Nigeria</p>
                   <p>Lagos, Nigeria</p>
                   <p>Philadelphia, USA</p>
                 </div>
 
-                <div className="flex lg:pt-8 gap-8 w-full">
+                <div className="flex lg:pt-8 gap-8 lg:gap-4 xl:gap-8 w-full">
                   <div>
                     <Image
                       src={trustedImage}
                       alt="accreditedlogo"
                       title="accredited logo"
-                      className="object-cover"
+                      className="object-contain"
                     />
                   </div>
 
-                  <div className="pt-6">
+                  <div className="lg:pt-4 xl:pt-6">
                     <Image
                       src={chat}
                       alt="chat"
                       title="chat"
-                      className="object-cover flex place-self-end"
+                      className="object-contain flex place-self-end"
                     />
                   </div>
                 </div>
@@ -152,10 +152,10 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="lg:pr-[10rem]">
+        <div className=" lg:pr-[3rem] xl:pr-[10rem]">
           <div className="flex flex-col justify-between gap-8 pt-4 lg:pt-[3rem] pb-4">
-            <div className="flex flex-col lg:flex-row gap-8 lg:gap-[4rem]">
-              <p className=" text-xs lg:text-sm pt-2 text-center lg:text-start">
+            <div className="flex flex-col lg:flex-row lg:justify-between gap-8 lg:gap-8 xl:gap-[4rem] w-full">
+              <p className=" text-xs xl:text-sm pt-2 text-center lg:text-start">
                 Guaranteed 2x on your service or cash investment, usually been
                 the first to invest.{" "}
                 <span className="font-semibold pl-1">
@@ -174,9 +174,11 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="flex flex-col gap-8 basis-[30%]">
+            <div className="flex flex-col gap-8">
               <div className="flex flex-col lg:flex-row justify-between gap-4 lg:gap-0 font-medium">
-                <p className="text-sm lg:text-base text-center lg:text-start">© 2023 SINC Partners Ltd. All rights reserved</p>{" "}
+                <p className="text-sm xl:text-base text-center lg:text-start">
+                  © 2023 SINC Partners Ltd. All rights reserved
+                </p>{" "}
                 <ul className="flex justify-center items-center gap-4">
                   <li className="underline underline-offset-4 decoration-white text-xs lg:text-base">
                     Privacy Policy
@@ -188,7 +190,8 @@ const Footer = () => {
                     Security
                   </li>
                 </ul>
-                <div className="flex gap-4 place-self-center lg:place-self-end">
+
+                <div className="flex gap-4 lg:gap-2 xl:gap-4 place-self-center lg:place-self-end">
                   <Image
                     src={facebookIcon}
                     alt="socialIcon"

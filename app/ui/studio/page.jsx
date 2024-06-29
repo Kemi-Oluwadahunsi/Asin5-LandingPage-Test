@@ -3,17 +3,17 @@ import img from "./image"
 import { FaArrowRight } from "react-icons/fa6";
 const Studios = () => {
   return (
-    <div className="bg-[#F4F4F4] lg:px-[12rem] px-4 lg:py-[3rem] py-8 flex flex-col gap-8 lg:gap-[3rem]">
+    <div className="bg-[#F4F4F4] xl:px-[12rem] lg:px-[8rem] px-4 lg:py-[3rem] py-8 flex flex-col gap-8 lg:gap-[3rem]">
       <div className="flex flex-col gap-4 text-center justify-center">
-        <h1 className="text-[#212121] lg:text-[4rem] text-[1.1rem] font-medium mx-auto">
+        <h1 className="text-[#212121] lg:text-[3em] xl:text-[4rem] text-[1.1rem] font-medium mx-auto">
           Our Studio Portfolio
         </h1>
-        <p className="lg:w-[71%] lg:text-base text-sm mx-auto">
+        <p className="lg:text-base text-sm mx-auto">
           Our 2024 Service Incubator Portfolio Companies
         </p>
       </div>
 
-      <div className="grid grid-cols-4 lg:grid-cols-8 w-full gap-8">
+      <div className="grid grid-cols-4 lg:grid-cols-6 xl:grid-cols-8 w-full gap-8">
         {img.map((item) => (
           <div key={item.id}>
             <Image

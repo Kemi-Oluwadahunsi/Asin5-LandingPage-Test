@@ -1,8 +1,8 @@
 
 const BuildCall = () => {
   return (
-    <div className="bg-[#F4F4F4] px-[10rem] pt-[3rem] pb-[8rem] hidden lg:flex flex-col gap-[3rem]">
-      <h1 className="text-[#212121] text-[4rem] w-[70%] font-medium mx-auto text-center">
+    <div className="bg-[#F4F4F4] px-[6rem] xl:px-[10rem] pt-[3rem] pb-[8rem] hidden lg:flex flex-col gap-[3rem]">
+      <h1 className="text-[#212121] text-[3rem] xl:text-[4rem]lg:w-[90%] xl:w-[70%] font-medium mx-auto text-center">
         Let&apos;s build companies that help everyone succeed
       </h1>
 

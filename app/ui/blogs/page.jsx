@@ -7,68 +7,83 @@ import img3 from "../../../public/images/img3.png";
 
 const Blogs = () => {
   return (
-    <div className=" bg-[#F4F4F4] lg:px-[10rem] px-4 py-[3rem] flex flex-col gap-[5rem]">
+    <div className=" bg-[#F4F4F4] lg:px-[4rem] xl:px-[10rem] px-4 py-[3rem] flex flex-col gap-[3rem] xl:gap-[5rem]">
       <div className="flex flex-col gap-4 ">
-        <h1 className="text-[#212121] lg:text-[4rem] text-[1.1rem] xl:w-[90%] font-medium mx-auto">
+        <h1 className="text-[#212121] lg:text-[3em] text-center xl:text-[4rem] text-[1.1rem] xl:w-[90%] font-medium mx-auto">
           Blogs & Resources
         </h1>
 
-        <div className="flex flex-col gap-[3rem]">
-          <div className="flex flex-col lg:flex-row justify-between w-full gap-8">
-            <div>
-              <Image src={video1} alt="videoImage" title="Video image" />
+        <div className="flex flex-col gap-[3em] lg:gap-8 xl:gap-[3rem]">
+          <div className="flex flex-col lg:flex-row justify-between w-full gap-8 lg:gap-4 xl:gap-8">
+            <div className="w-full">
+              <Image src={video1} alt="videoImage" title="Video image" className="sm:w-full object-contain" />
             </div>
-            <div>
-              <Image src={video2} alt="videoImage" title="Video image" />
+            <div className="w-full">
+              <Image src={video2} alt="videoImage" title="Video image" className="sm:w-full object-contain" />
             </div>
-            <div>
-              <Image src={video2} alt="videoImage" title="Video image" />
+            <div className="w-full">
+              <Image src={video2} alt="videoImage" title="Video image" className="sm:w-full object-contain" />
             </div>
           </div>
 
-          <div className="flex flex-col lg:flex-row justify-between w-full gap-[3.5rem]">
-            <div className="flex justify-between flex-1">
-              <div className="flex flex-col gap-2 basis-[75%] ">
+          <div className="flex flex-col lg:flex-row justify-between w-full gap-8 lg:gap-6">
+            <div className="flex xl:gap-2 justify-between flex-1">
+              <div className="flex flex-col gap-2 ">
                 <h4 className="font-semibold text-sm">
                   Top Ten Most Powerful Startup
                 </h4>
-                <p className="text-[0.75rem]">
+                <p className="xl:text-[0.75rem] text-[0.75rem] lg:text-[0.7rem]">
                   Top Ten Most Powerful Startup. Top Ten Most Powerful Startup.
                   Top Ten Most Powerful Startup
                 </p>
               </div>
-              <div className="">
-                <Image src={img1} alt="assetImage" title="asset image" />
+              <div className="xl:basis-[40%] lg:basis-[45%]">
+                <Image
+                  src={img1}
+                  alt="assetImage"
+                  title="asset image"
+                  className="object-fill w-full h-full"
+                />
               </div>
             </div>
 
             <div className="flex justify-between flex-1">
-              <div className="flex flex-col gap-2 basis-[75%] ">
+              <div className="flex xl:gap-2 flex-col gap-2 ">
                 <h4 className="font-semibold text-sm">
                   Top Ten Most Powerful Startup
                 </h4>
-                <p className="text-[0.75rem]">
+                <p className="xl:text-[0.75rem] text-[0.75rem] lg:text-[0.7rem]">
                   Top Ten Most Powerful Startup. Top Ten Most Powerful Startup.
                   Top Ten Most Powerful Startup
                 </p>
               </div>
-              <div>
-                <Image src={img2} alt="assetImage" title="asset image" />
+              <div className="xl:basis-[40%] lg:basis-[45%]">
+                <Image
+                  src={img2}
+                  alt="assetImage"
+                  title="asset image"
+                  className="object-fill w-full h-full"
+                />
               </div>
             </div>
 
             <div className="flex justify-between flex-1">
-              <div className="flex flex-col gap-2 basis-[75%] ">
+              <div className="flex xl:gap-2 flex-col gap-2  ">
                 <h4 className="font-semibold text-sm">
                   Top Ten Most Powerful Startup
                 </h4>
-                <p className="text-[0.75rem]">
+                <p className="xl:text-[0.75rem] text-[0.75rem] lg:text-[0.7rem]">
                   Top Ten Most Powerful Startup. Top Ten Most Powerful Startup.
                   Top Ten Most Powerful Startup
                 </p>
               </div>
-              <div>
-                <Image src={img3} alt="assetImage" title="asset image" />
+              <div className="xl:basis-[40%] lg:basis-[45%]">
+                <Image
+                  src={img3}
+                  alt="assetImage"
+                  title="asset image"
+                  className="object-fill w-full h-full"
+                />
               </div>
             </div>
           </div>
