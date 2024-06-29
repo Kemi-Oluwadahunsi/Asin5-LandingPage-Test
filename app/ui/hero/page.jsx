@@ -341,12 +341,12 @@ const Hero = () => {
       </div>
 
       <div
-        className="swiper-button-prev"
-        style={{ color: "#5B5454", paddingLeft: "5px" }}
+        className="swiper-button-prev bg-[#212121]"
+        style={{ color: "#fff", paddingLeft: "" }}
       ></div>
       <div
         className="swiper-button-next"
-        style={{ color: "#5B5454", paddingLeft: "3px" }}
+        style={{ color: "#fff", }}
       ></div>
     </div>
   );

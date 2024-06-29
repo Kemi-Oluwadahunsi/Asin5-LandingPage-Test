@@ -3,7 +3,10 @@
 @tailwind utilities;
 
 /* Override slick-slide default styles */
-
+.swiper-button-next {
+    z-index: 999;
+    background: #212121;
+}
 
 @media (min-width: 1024px) {
   .custom-slide {
