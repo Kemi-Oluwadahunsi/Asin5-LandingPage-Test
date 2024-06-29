@@ -2,3 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Override slick-slide default styles */
+
+
+@media (min-width: 1024px) {
+  .custom-slide {
+    flex-direction: row;
+  }
+}

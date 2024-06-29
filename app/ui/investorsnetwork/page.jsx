@@ -206,7 +206,7 @@ const InvestorsNetwork = () => {
                 </div>
               </div>
 
-              <div className="lg:border-r border-[#A4A4A4] border-b lg:border-b-0flex flex-col gap-4 pl-4 py-4 flex-1">
+              <div className="lg:border-r border-[#A4A4A4] border-b lg:border-b-0 flex flex-col gap-4 pl-4 py-4 flex-1">
                 <h3 className="font-semibold">Deal 7</h3>
                 <div className="text-sm flex flex-col gap-2">
                   <p>
