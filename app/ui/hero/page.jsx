@@ -36,7 +36,7 @@
 //         {...sliderSettings}
 //         className="flex w-full"
 //       >
-        
+
 //           <div className="relative pb-[4rem] lg:pb-0 flex justify-between">
 //             <div className="flex flex-col lg:basis-[55%] ">
 //               <div className="xl:w-[75%] lg:w-[90%] px-4 lg:px-0 pt-[5rem] xl:pt-[5rem] lg:pt-[3rem] flex flex-col lg:gap-4 xl:gap-8 gap-8 mx-auto lg:pb-4 xl:pb-0">
@@ -143,7 +143,7 @@
 //               />
 //             </div>
 //           </div>
-      
+
 //       </Slider>
 
 //       <div className="flex gap-2 absolute top-[90%] left-[50%] transform -translate-x-1/2">
@@ -167,11 +167,10 @@
 
 // export default Hero;
 
-
 "use client";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Navigation } from "swiper/modules";
+import { Pagination, Navigation, Autoplay } from "swiper/modules";
 import heroImage1 from "../../../public/images/heroImage1.png";
 import heroImage from "../../../public/images/heroImage.png";
 import heroImage3 from "../../../public/images/heroImage1.png";
@@ -180,46 +179,40 @@ import { useRef, useState } from "react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import "swiper/css/autoplay";
 
 const Hero = () => {
-   const [activeDot, setActiveDot] = useState(0);
-   const swiperRef = useRef(null);
+  const [activeDot, setActiveDot] = useState(0);
+  const swiperRef = useRef(null);
 
-//    const handleDotClick = (index) => {
-//      if (swiperRef.current) {
-//        swiperRef.current.slideTo(index);
-//      }
-//    };
+  const handleDotClick = (index) => {
+    if (swiperRef.current && swiperRef.current.swiper) {
+      swiperRef.current.swiper.slideToLoop(index);
+    }
+  };
 
-//  const sliderSettings = {
-//    modules: [Navigation],
-//    navigation: {
-//      nextEl: ".swiper-button-next",
-//      prevEl: ".swiper-button-prev",
-//    },
-//    onSlideChange: (swiper) => setActiveDot(swiper.activeIndex),
-//    onSwiper: (swiper) => (swiperRef.current = swiper),
-//  };
-
- const handleDotClick = (index) => {
-   if (swiperRef.current && swiperRef.current.swiper) {
-     swiperRef.current.swiper.slideTo(index);
-   }
- };
-
- const sliderSettings = {
-   modules: [Navigation],
-   navigation: {
-     nextEl: ".swiper-button-next",
-     prevEl: ".swiper-button-prev",
-   },
-   onSlideChange: (swiper) => setActiveDot(swiper.activeIndex),
-   onSwiper: (swiper) => (swiperRef.current = swiper),
- };
+  const sliderSettings = {
+    modules: [Navigation, Pagination, Autoplay],
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    loop: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    onSlideChange: (swiper) => setActiveDot(swiper.realIndex),
+    onSwiper: (swiper) => (swiperRef.current = swiper),
+  };
 
   return (
     <div className="relative">
-      <Swiper {...sliderSettings} className="w-full">
+      <Swiper {...sliderSettings} className="w-full" ref={swiperRef}>
         <SwiperSlide>
           <div className="flex flex-col lg:flex-row pb-[4rem] lg:pb-0">
             <div className="flex flex-col lg:basis-[55%]">
@@ -312,8 +305,8 @@ const Hero = () => {
                 src={herocenter}
                 alt="herocenter"
                 title="herocenter"
-                width={'auto'}
-                height={'auto'}
+                width={"auto"}
+                height={"auto"}
                 className="object-contain"
               />
             </div>
@@ -347,8 +340,14 @@ const Hero = () => {
         ))}
       </div>
 
-      <div className="swiper-button-prev" style={{ color: "#5B5454", paddingLeft: "5px" }}></div>
-      <div className="swiper-button-next" style={{ color: "#5B5454", paddingLeft: "3px" }}></div>
+      <div
+        className="swiper-button-prev"
+        style={{ color: "#5B5454", paddingLeft: "5px" }}
+      ></div>
+      <div
+        className="swiper-button-next"
+        style={{ color: "#5B5454", paddingLeft: "3px" }}
+      ></div>
     </div>
   );
 };
