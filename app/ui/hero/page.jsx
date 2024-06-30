@@ -63,8 +63,8 @@ const Hero = () => {
         <SwiperSlide>
           <div className="flex flex-col lg:flex-row pb-[4rem] lg:pb-0">
             <div className="flex flex-col lg:basis-[55%]">
-              <div className="xl:w-[75%] lg:w-[90%] px-4 lg:px-0 pt-[5rem] xl:pt-[5rem] lg:pt-[3rem] flex flex-col lg:gap-4 xl:gap-8 gap-8 mx-auto lg:pb-4 xl:pb-0">
-                <div className="flex flex-col gap-2">
+              <div className="xl:w-[75%] lg:w-[90%] text-center lg:text-start px-4 lg:px-0 pt-[3rem] xl:pt-[5rem] lg:pt-[3rem] flex flex-col lg:gap-4 xl:gap-8 gap-8 mx-auto lg:pb-4 xl:pb-0">
+                <div className="flex flex-col gap-2 ">
                   <h2 className="lg:font-semibold font-medium text-[1.1rem] leading-relaxed lg:text-[2em] xl:text-[2.5rem] text-[#212121]">
                     SINC Partners is a service incubation company{" "}
                   </h2>
@@ -96,8 +96,8 @@ const Hero = () => {
         <SwiperSlide>
           <div className="flex flex-col lg:flex-row pb-[4rem] lg:pb-0">
             <div className="flex flex-col lg:basis-[55%]">
-              <div className="xl:w-[75%] lg:w-[90%] px-4 lg:px-0 pt-[5rem] xl:pt-[5rem] lg:pt-[3rem] flex flex-col lg:gap-4 xl:gap-8 gap-8 mx-auto lg:pb-4 xl:pb-0">
-                <div className="flex flex-col gap-2">
+              <div className="xl:w-[75%] lg:w-[90%] text-center lg:text-start px-4 lg:px-0 pt-[3rem] xl:pt-[5rem] lg:pt-[3rem] flex flex-col lg:gap-4 xl:gap-8 gap-8 mx-auto lg:pb-4 xl:pb-0">
+                <div className="flex flex-col gap-2 ">
                   <h2 className="lg:font-semibold font-medium text-[1.1rem] leading-relaxed lg:text-[2em] xl:text-[2.5rem] text-[#212121]">
                     Come with an idea, leave with a company.
                   </h2>
@@ -129,8 +129,8 @@ const Hero = () => {
         <SwiperSlide>
           <div className="flex flex-col lg:flex-row pb-[4rem] lg:pb-0">
             <div className="flex flex-col lg:basis-[55%]">
-              <div className="xl:w-[75%] lg:w-[90%] px-4 lg:px-0 pt-[5rem] xl:pt-[5rem] lg:pt-[3rem] flex flex-col lg:gap-4 xl:gap-8 gap-8 mx-auto lg:pb-4 xl:pb-0">
-                <div className="flex flex-col gap-2">
+              <div className="xl:w-[75%] lg:w-[90%] text-center lg:text-start px-4 lg:px-0 pt-[5rem] xl:pt-[3rem] lg:pt-[3rem] flex flex-col lg:gap-4 xl:gap-8 gap-8 mx-auto lg:pb-4 xl:pb-0">
+                <div className="flex flex-col gap-2 ">
                   <h2 className="lg:font-semibold font-medium text-[1.1rem] leading-relaxed lg:text-[2em] xl:text-[2.5rem] text-[#212121]">
                     We are big on these 3 things;{" "}
                   </h2>
