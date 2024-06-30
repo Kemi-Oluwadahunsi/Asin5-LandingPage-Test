@@ -21,10 +21,10 @@ const AreaOfFocus = () => {
         </p>
       </div>
 
-      <div className="flex flex-col items-center justify-center lg:flex-row w-full">
+      <div className="flex flex-col lg:items-center justify-center lg:flex-row w-full">
         {data.map((item) => (
           <div key={item.id} className={`p-4 ${bgColorClasses[item.id]}`}>
-            <div className=" text-white text-base xl:text-[1.2rem] xl:px-4 px-2 flex flex-col justify-between h-[4rem] xl:w-[14rem] lg:w-[10em] lg:h-[6em] xl:h-[8rem] lg:gap-2">
+            <div className=" text-white text-base xl:text-[1.2rem] xl:px-4 px-2 flex flex-col justify-between w-full h-[4rem] xl:w-[14rem] lg:w-[10em] lg:h-[6em] xl:h-[8rem] lg:gap-2">
               <span>{item.num}</span>
               <p>{item.text}</p>
             </div>
