@@ -8,40 +8,54 @@ import heroImage1 from "../../../public/images/heroImage1.png";
 import heroImage from "../../../public/images/heroImage.png";
 import heroImage3 from "../../../public/images/heroImage3.png";
 import herocenter from "../../../public/images/herocenter.png";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "swiper/css/autoplay";
 
 const Hero = () => {
-  const [activeDot, setActiveDot] = useState(0);
-  const swiperRef = useRef(null);
+   const [activeDot, setActiveDot] = useState(0);
+   const [isLargeScreen, setIsLargeScreen] = useState(false);
+   const swiperRef = useRef(null);
 
-  const handleDotClick = (index) => {
-    if (swiperRef.current && swiperRef.current.swiper) {
-      swiperRef.current.swiper.slideToLoop(index);
-    }
-  };
+   useEffect(() => {
+     const handleResize = () => {
+       setIsLargeScreen(window.innerWidth >= 640);
+     };
 
-  const sliderSettings = {
-    modules: [Navigation, Pagination, Autoplay],
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    loop: true,
-    autoplay: {
-      delay: 3000,
-      disableOnInteraction: false,
-    },
-    onSlideChange: (swiper) => setActiveDot(swiper.realIndex),
-    onSwiper: (swiper) => (swiperRef.current = swiper),
-  };
+     handleResize(); // Check the screen size on initial load
+     window.addEventListener("resize", handleResize); // Add resize event listener
+
+     return () => {
+       window.removeEventListener("resize", handleResize); // Cleanup the event listener on component unmount
+     };
+   }, []);
+
+   const handleDotClick = (index) => {
+     if (swiperRef.current && swiperRef.current.swiper) {
+       swiperRef.current.swiper.slideToLoop(index);
+     }
+   };
+
+   const sliderSettings = {
+     modules: [Navigation, Pagination, Autoplay],
+     navigation: {
+       nextEl: ".swiper-button-next",
+       prevEl: ".swiper-button-prev",
+     },
+     pagination: {
+       el: ".swiper-pagination",
+       clickable: true,
+     },
+     loop: true,
+     autoplay: {
+       delay: 3000,
+       disableOnInteraction: false,
+     },
+     onSlideChange: (swiper) => setActiveDot(swiper.realIndex),
+     onSwiper: (swiper) => (swiperRef.current = swiper),
+   };
 
   return (
     <div className="relative">
@@ -173,14 +187,18 @@ const Hero = () => {
         ))}
       </div>
 
-      <div
-        className="swiper-button-prev bg-[#212121]"
-        style={{ color: "#fff", paddingLeft: "" }}
-      ></div>
-      <div
-        className="swiper-button-next"
-        style={{ color: "#fff", }}
-      ></div>
+      {isLargeScreen && (
+        <>
+          <div
+            className="swiper-button-prev sm:bg-[#212121]"
+            style={{ color: "#fff" }}
+          ></div>
+          <div
+            className="swiper-button-next sm:bg-[#212121]"
+            style={{ color: "#fff" }}
+          ></div>
+        </>
+      )}
     </div>
   );
 };

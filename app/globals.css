@@ -5,11 +5,21 @@
 /* Override slick-slide default styles */
 .swiper-button-next {
     z-index: 999;
-    background: #212121;
+    /* background: #212121; */
+}
+
+.swiper-button-next, .swiper-button-prev {
+    font-size: small;
 }
 
 @media (min-width: 1024px) {
   .custom-slide {
     flex-direction: row;
   }
+}
+
+@media (min-width: 640px) {
+  .swiper-button-next, .swiper-button-prev {
+  display: flex;
+}
 }
