@@ -6,7 +6,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation, Autoplay } from "swiper/modules";
 import heroImage1 from "../../../public/images/heroImage1.png";
 import heroImage from "../../../public/images/heroImage.png";
-import heroImage3 from "../../../public/images/herores.png";
+import heroImage3 from "../../../public/images/heroImage3.png";
 import herocenter from "../../../public/images/herocenter.png";
 import { useRef, useState } from "react";
 import "swiper/css";
